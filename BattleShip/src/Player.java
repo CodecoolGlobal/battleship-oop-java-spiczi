@@ -2,10 +2,11 @@ public class Player {
     String name;
     int shipCount;
     int score;
-    Board board;
+    String[][] playerBoard;
 
-    Player(String name){
+    Player(String name, String[][] playerBoard){
         this.name=name;
+        this.playerBoard=playerBoard;
     }
 
 

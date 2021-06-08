@@ -13,6 +13,19 @@ public class Board {
             }
         }
     }
+    void printBoard(String[][] board, String player){ //tabla megjelenitese
+        System.out.println(player+"'s turn");
+        for (int i=0;i<col.length; i++){
+            System.out.print(col[i]+" ");
+        }
+        for (int j=0; j<10; j++){
+            System.out.println();
+            System.out.print(row[j]+" ");
+            for (int k=0; k<10; k++){
+                System.out.print(board[j][k]+" ");
+            }
+        }
+    }
     void printBoard(){ //tabla megjelenitese
         for (int i=0;i<col.length; i++){
             System.out.print(col[i]+" ");
@@ -22,6 +35,18 @@ public class Board {
             System.out.print(row[j]+" ");
             for (int k=0; k<10; k++){
                 System.out.print(ocean[j][k]+" ");
+            }
+        }
+    }
+    void printBoard(String[][] board){ //tabla megjelenitese
+        for (int i=0;i<col.length; i++){
+            System.out.print(col[i]+" ");
+        }
+        for (int j=0; j<10; j++){
+            System.out.println();
+            System.out.print(row[j]+" ");
+            for (int k=0; k<10; k++){
+                System.out.print(board[j][k]+" ");
             }
         }
     }
