@@ -6,6 +6,7 @@ public class Main {
         Player p1= new Player(Game.createPlayer());
         Player p2= new Player(Game.createPlayer());
         System.out.print(p1.name);
+
     }
 
 }

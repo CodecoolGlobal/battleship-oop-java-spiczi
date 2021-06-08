@@ -6,7 +6,9 @@ public class Game {
         System.out.println("Enter user name: ");
         String userName = scanner.nextLine();
         return userName;
+
     }
+    static void createBoard(){}
 
 
 }
