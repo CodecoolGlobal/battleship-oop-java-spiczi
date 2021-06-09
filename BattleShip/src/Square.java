@@ -3,15 +3,16 @@ public class Square {
     private int y;
     private SquareStatus squareStatus;
 
+    public Square(int x, int y, SquareStatus squareStatus) {
+        this.x = x;
+        this.y = y;
+        this.squareStatus = squareStatus;
+    }
+
     public void setSquareStatus(SquareStatus squareStatus) {
         this.squareStatus = squareStatus;
     }
 
-    public Square(int x, int y, SquareStatus squareStatus) {
-        this.x = x;
-        this.y = y;
-        squareStatus = squareStatus;
-    }
     public int getX() {
         return x;
     }
@@ -20,25 +21,23 @@ public class Square {
         return y;
     }
 
-    public  SquareStatus getSquareStatus() {
+    public SquareStatus getSquareStatus() {
         return squareStatus;
     }
 
-
-    public char getCharacter(){
+    public char getCharacter() {
         char result = ' ';
-        switch(squareStatus){
+        switch (squareStatus) {
+            case EMPTY:
+                result = 'E';
             case HIT:
-                result = 'B';
-            case MISSED:
-                result ='M';
+                result = 'H';
             case SHIP:
                 result = 'S';
-            case  OCEAN:
-                result = '~';
-            case EMPTY:
-                result = ' ';
-
+            case OCEAN:
+                result = 'O';
+            case MISSED:
+                result = 'M';
         }
         return result;
     }
