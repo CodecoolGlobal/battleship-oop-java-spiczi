@@ -1,11 +1,12 @@
 public enum ShipType {
-    CARRIER (4),
-    CRUISER(4),
-    BATTLESHIP(5),
-    SUBMARINE(2),
-    DESTROYER(3);
+    CARRIER (1),
+    CRUISER(2),
+    BATTLESHIP(2),
+    DESTROYER(3),
+    SUBMARINE(4);
 
     public final Integer label;
+
     ShipType(Integer label) {
         this.label = label;
     }
