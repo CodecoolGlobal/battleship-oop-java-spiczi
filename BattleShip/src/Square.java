@@ -1,16 +1,16 @@
 public class Square {
     private int x;
     private int y;
-    private SquareStatus SquareStatus;
+    private SquareStatus squareStatus;
 
     public void setSquareStatus(SquareStatus squareStatus) {
-        this.SquareStatus = squareStatus;
+        this.squareStatus = squareStatus;
     }
 
     public Square(int x, int y, SquareStatus squareStatus) {
         this.x = x;
         this.y = y;
-        SquareStatus = squareStatus;
+        squareStatus = squareStatus;
     }
     public int getX() {
         return x;
@@ -21,7 +21,7 @@ public class Square {
     }
 
     public  SquareStatus getSquareStatus() {
-        return SquareStatus;
+        return squareStatus;
     }
 
 
@@ -34,8 +34,10 @@ public class Square {
                 result ='M';
             case SHIP:
                 result = 'S';
-            class OCEAN:
+            case  OCEAN:
                 result = '~';
+            case EMPTY:
+                result = ' ';
 
         }
         return result;
