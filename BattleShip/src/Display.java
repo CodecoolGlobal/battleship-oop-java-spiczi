@@ -62,35 +62,38 @@ public class Display {
     }
 
     public void printBoard(Board board) {
-        System.out.println("   ");
+        System.out.print("   ");
         for(int i = 0; i <board.getSizeX(); i++) {
             if(i < 10) {
-                System.out.println(i + "  ");
+                System.out.print(i + "  ");
             } else {
-                System.out.println(i + " ");
+                System.out.print(i + " ");
             }
 
         }
         System.out.println();
         for(int row = 0; row < board.getSizeX(); row++) {
             if(row < 10) {
-                System.out.println(row + "  ");
+                System.out.print(row + "  ");
             } else {
-                System.out.println(row + " ");
+                System.out.print(row + " ");
             }
             for (int col = 0; col < board.getSizeY(); col++) {
                 switch (board.getSquare(row, col).getCharacter()) {
                     case 'O':
-                        System.out.println(ANSI_BLUE_BACKGROUND + " " + ANSI_RESET + " ");
+                        System.out.print(ANSI_BLUE_BACKGROUND + " " + ANSI_RESET + " ");
                         break;
                     case 'H':
-                        System.out.println(ANSI_RED_BACKGROUND + " " + ANSI_RESET + " ");
+                        System.out.print(ANSI_RED_BACKGROUND + " " + ANSI_RESET + " ");
                         break;
                     case 'S':
-                        System.out.println(ANSI_YELLOW_BACKGROUND + " " + ANSI_RESET + " ");
+                        System.out.print(ANSI_YELLOW_BACKGROUND + " " + ANSI_RESET + " ");
                         break;
                     case 'M':
-                        System.out.println(ANSI_BLACK_BACKGROUND + " " + ANSI_RESET + " ");
+                        System.out.print(ANSI_BLACK_BACKGROUND + " " + ANSI_RESET + " ");
+                        break;
+                    case 'E':
+                        System.out.print(ANSI_CYAN_BACKGROUND + " " + ANSI_RESET + " ");
                         break;
                 }
             }
