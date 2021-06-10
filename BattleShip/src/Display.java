@@ -98,7 +98,7 @@ public class Display {
                         "                 =====| |.---------------------------. | |====\n" +
                         "   <--------------------'   .  .  .  .  .  .  .  .   '--------------/\n" +
                         "     \\                                                             /\n" +
-                        "      \\_______________________________________________WWS_________/\n" +
+                        "      \\___________________________________________________________/\n" +
                         "  wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww\n" +
                         "wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww\n" +
                         "   wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww "
