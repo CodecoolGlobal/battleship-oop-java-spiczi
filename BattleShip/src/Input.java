@@ -17,9 +17,17 @@ public class Input {
     public void generateBoard() {
         System.out.println("select height: ");
         int x = scanner.nextInt();
+        if (x > 12) {
+            System.out.println("The board height is too large! ");
+            x = scanner.nextInt();
+        }
         scanner.nextLine();
         System.out.println("select width: ");
         int y = scanner.nextInt();
+        if (y > 12) {
+            System.out.println("The board width is too large! ");
+            y = scanner.nextInt();
+        }
         Board board1 = new Board(x, y);
         Board board2 = new Board(x, y);
         boards.add(board1);
