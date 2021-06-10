@@ -12,7 +12,8 @@ public class Game {
         boards = board1.getBoards();
         Board boardPlayer1 = boards.get(0);
         Board boardPlayer2 = boards.get(1);
-        for (int i = 2; i < 2; i++) {
+        //Change i to increase or decrease number of ships for Player 1
+        for (int i = 0; i < 2; i++) {
             Ship one = board1.createShip(0);
             while (one.isPlacementOK(one, shipsPlayer1, boardPlayer1) == false) {
                 one = board1.createShip(0);
@@ -20,7 +21,8 @@ public class Game {
             }
             shipsPlayer1.add(one);
         }
-        for (int i = 2; i < 2; i++) {
+        //Change i to increase or decrease number of ships for Player 2
+        for (int i = 0; i < 2; i++) {
             Ship one = board1.createShip(1);
             while (one.isPlacementOK(one, shipsPlayer2, boardPlayer1) == false) {
                 one = board1.createShip(1);
