@@ -128,9 +128,9 @@ public class Display {
         System.out.print("   ");
         for(int i = 0; i <board.getSizeX(); i++) {
             if(i < 10) {
-                System.out.print(i + "  ");
-            } else {
                 System.out.print(i + " ");
+            } else {
+                System.out.print(i);
             }
 
         }
