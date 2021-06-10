@@ -30,7 +30,7 @@ public class Display {
                 "█▒▒▒▒▒▒▒▒▒▒▒▒▒▒1%");
         try
         {
-            Thread.sleep(1000);
+            Thread.sleep(900);
         }
         catch(InterruptedException ex)
         {
@@ -40,7 +40,7 @@ public class Display {
                 "████▒▒▒▒▒▒▒▒▒▒▒23%");
         try
         {
-            Thread.sleep(1000);
+            Thread.sleep(1500);
         }
         catch(InterruptedException ex)
         {
@@ -50,7 +50,7 @@ public class Display {
                 "███████████▒▒▒▒67%");
         try
         {
-            Thread.sleep(1000);
+            Thread.sleep(700);
         }
         catch(InterruptedException ex)
         {
