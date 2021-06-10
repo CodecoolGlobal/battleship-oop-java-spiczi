@@ -38,7 +38,7 @@ public class Player {
                 }
             }
         }
-        board.getSquare(x,y).setSquareStatus(SquareStatus.EMPTY);
+        board.getSquare(x,y).setSquareStatus(SquareStatus.MISSED);
         System.out.println("Miss!");
         return false;
     }
