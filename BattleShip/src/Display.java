@@ -1,3 +1,5 @@
+import java.util.concurrent.TimeUnit;
+
 public class Display {
 
     public static final String ANSI_RESET = "\u001B[0m";
@@ -24,7 +26,68 @@ public class Display {
     }
 
     public void printMenu() {
-        System.out.println("Battleship is starting ............");
+        System.out.println("Loading Battleship™\n" +
+                "█▒▒▒▒▒▒▒▒▒▒▒▒▒▒1%");
+        try
+        {
+            Thread.sleep(1000);
+        }
+        catch(InterruptedException ex)
+        {
+            Thread.currentThread().interrupt();
+        }
+        System.out.println("Loading Battleship™\n" +
+                "████▒▒▒▒▒▒▒▒▒▒▒23%");
+        try
+        {
+            Thread.sleep(1000);
+        }
+        catch(InterruptedException ex)
+        {
+            Thread.currentThread().interrupt();
+        }
+        System.out.println("Loading Battleship™\n" +
+                "███████████▒▒▒▒67%");
+        try
+        {
+            Thread.sleep(1000);
+        }
+        catch(InterruptedException ex)
+        {
+            Thread.currentThread().interrupt();
+        }
+        System.out.println("Loading Battleship™\n" +
+                "██████████████▒99%");
+        try
+        {
+            Thread.sleep(1000);
+        }
+        catch(InterruptedException ex)
+        {
+            Thread.currentThread().interrupt();
+        }
+        System.out.println("                    __                 __                    \n" +
+                "                   /|  /              /|  /                  \n" +
+                "                  ( | (___  ___      ( | (___  ___  ___  ___ \n" +
+                "                    | |   )|___)       | |   )|   )|___)|___)\n" +
+                "                    | |  / |__         | |  / |    |__  |__  \n" +
+                "                                                             \n" +
+                "                                                                 \n" +
+                "                /|/|           /         /                       \n" +
+                "               ( / |      ___ (     ___ (___  ___  ___  ___  ___ \n" +
+                "               |   )|   )|___ |___)|___)|    |___)|___)|   )|___ \n" +
+                "               |  / |__/  __/ | \\  |__  |__  |__  |__  |     __/ \n" +
+                "                                                                 ");
+        try
+        {
+            Thread.sleep(500);
+        }
+        catch(InterruptedException ex)
+        {
+            Thread.currentThread().interrupt();
+        }
+
+
         System.out.println("\n" + "\n" +
                         "\n" +
                         "\n" +
