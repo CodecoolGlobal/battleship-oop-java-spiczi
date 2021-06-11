@@ -48,10 +48,8 @@ public class Game {
             if (player2.handleShot(ShootCoordinates[0], ShootCoordinates[1])) {
                 display.printBoard(player2.getBoard());
                 numberOfShipsPlayer2--;
-                System.out.println("Player 2 has " + numberOfShipsPlayer2 + " ships left!");
             } else {
                 display.printBoard(player2.getBoard());
-                System.out.println("Player 2 has " + numberOfShipsPlayer2 + " ships left!");
             }
 
             if(numberOfShipsPlayer2 == 0) {
@@ -64,10 +62,8 @@ public class Game {
             if (player1.handleShot(ShootCoordinates[0], ShootCoordinates[1])) {
                 display.printBoard(player1.getBoard());
                 numberOfShipsPlayer1--;
-                System.out.println("Player 1 has " + numberOfShipsPlayer1 + " ships left!");
             } else {
                 display.printBoard(player1.getBoard());
-                System.out.println("Player 1 has " + numberOfShipsPlayer1 + " ships left!");
             }
 
             if(numberOfShipsPlayer1 == 0) {
